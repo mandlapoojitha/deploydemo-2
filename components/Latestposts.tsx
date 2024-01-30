@@ -13,8 +13,8 @@ const Latestposts = () => {
       </p>
       {latestpostsdata.map((item, index) => {
         return (
-            <Link href="/[id]" as={`/${item.id}`}>
-            <div key={index} className="flex flex-col justify-start items-start w-full py-2 px-4 border-b-1 border-black mx-1">
+            <Link  key={index}  href="/[id]" as={`/${item.id}`}>
+            <div className="flex flex-col justify-start items-start w-full py-2 px-4 border-b-1 border-black mx-1">
             <p className="font-semibold text-base">{item.techname}</p>
             <p>{item.blogname}</p>
           </div>
