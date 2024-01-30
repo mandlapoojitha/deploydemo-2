@@ -11,7 +11,7 @@ const Blogcard = (props :any) => {
     <>
     {
       bdata.map((item, index) => (
-        <div className='w-1/2 min-h-72  flex flex-col justify-start items-center shadow-lg rounded'>
+        <div key={index} className='w-1/2 min-h-72  flex flex-col justify-start items-center shadow-lg rounded'>
         <div className="header w-full flex flex-col justify-start items-start bg-gradient-to-r from-blue-200 to-cyan-200 pt-10 pl-16 pb-10 rounded">
             <p className='text-xl font-bold'>{item.techname}</p>
             <p className='text-3xl font-extrabold mt-4'>{item.blogname}</p>
