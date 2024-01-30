@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import developericon from "../images/developericon.jpg";
+import developericon from "../public/developericon.jpg";
 import Loginbutton from "./Loginbutton";
 import Signupbutton from "./SignupButton";
 
@@ -59,14 +59,20 @@ const Navbar = () => {
       ))}
     </ul>
   );
+ 
 
   return (
     <div className="w-full flex flex-row items-center justify-around p-5 pt-0 bg-black pb-0 pl-0 text-white h-14">
       <div className="h-full flex flex-row items-center ml-2  gap-5">
       
-        {/* <Link href="/"><img src={`/developericon.jpg`} alt="no image" width={80} height={80} /></Link>
+      <Image
+      src={developericon}
+      width={80}
+      height={80}
+      alt="Picture of the author"
+    />
         
-        <Link href="/"><p className="font-bold text-2xl">DevByteHub</p></Link> */}
+        <Link href="/"><p className="font-bold text-2xl">DevByteHub</p></Link>
        
       </div>
       <ul className="navitems-div h-full flex flex-row items-center gap-9 font-medium text-base">

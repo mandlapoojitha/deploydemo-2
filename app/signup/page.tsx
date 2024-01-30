@@ -19,12 +19,13 @@ const Page: React.FC = () => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData); // Handle form submission logic here
+    console.log(formData);
   };
 
   return (
     <div className='w-full min-h-96 mb-7 flex flex-col justify-start items-center'>
       <div className="card w-1/3 min-h-4 mt-10 p-4 shadow-xl">
+      <h2 className='text-center font-bold text-xl'>Signup</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username">

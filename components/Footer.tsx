@@ -1,5 +1,9 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
+import facebookicon from "../public/images/facebookicon.png"
+import linkedinicon from "../public/images/linkedinicon.png"
+import twittericon from "../public/images/twittericon.png"
 
 const Footer = () => {
   return (
@@ -35,6 +39,24 @@ const Footer = () => {
           </p>
          
           <div className=" mt-4 flex flex-row justify-start items-center gap-4 ml-4">
+                  <Image
+                  src={facebookicon}
+                  width={30}
+                  height={30}
+                  alt="Picture of the author"
+                />
+                <Image
+                  src={twittericon}
+                  width={30}
+                  height={30}
+                  alt="Picture of the author"
+                />
+                <Image
+                  src={linkedinicon}
+                  width={30}
+                  height={30}
+                  alt="Picture of the author"
+                />
           {/* <img className="cursor-pointer" src={`/facebookicon.png`} alt="no image" width={30} height={30}/>
           <img  className="cursor-pointer" src={`/twittericon.png`} alt="no image" width={30} height={30}/>
           <img  className="cursor-pointer" src={`/linkedinicon.png`} alt="no image" width={30} height={30}/> */}
