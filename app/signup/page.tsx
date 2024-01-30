@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, ChangeEvent, FormEvent } from 'react';
+import Link from 'next/link';
 
 const Page: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -82,10 +83,12 @@ const Page: React.FC = () => {
               className="w-full p-2 border border-gray-300 rounded"
             />
           </div>
-
+          
+          <Link href="/login">
           <button type="submit" className="bg-black text-white p-2 rounded hover:opacity-80 active:opacity-90">
             Submit
           </button>
+          </Link>
         </form>
       </div>
     </div>
